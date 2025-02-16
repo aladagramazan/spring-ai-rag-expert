@@ -24,7 +24,7 @@ public class LoadVectorStore implements CommandLineRunner {
 
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         if (Objects.requireNonNull(vectorStore.similaritySearch("Sportsman")).isEmpty()) {
             log.info("Loading documents into vector store");
 
